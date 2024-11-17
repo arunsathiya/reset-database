@@ -1,0 +1,11 @@
+name: CI
+
+on: [push, pull_request]
+
+jobs:
+  php-lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: PHP Syntax Check
+        run: find . -name "*.php" -exec php -l {} \;
