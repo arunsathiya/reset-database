@@ -1,10 +1,22 @@
 <?php
 /*
 Plugin Name: Reset Database
-Plugin URI: http://www.maltesesolutions.com
-Description: It resets the database to the default installation and will delete any media files.
-Version: 1.1.3
-Author: MalteseSolutions (Modified)
+Plugin URI: https://github.com/arunsathiya/reset-database
+Description: WordPress database reset tool that preserves specified plugin states. Based on Reset Database by MalteseSolutions.
+Version: 1.0.0
+Author: arunsathiya
+Author URI: https://github.com/arunsathiya
+License: GPLv2
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: reset-database
+
+GitHub Plugin URI: arunsathiya/reset-database
+GitHub Branch: main
+Primary Branch: main
+Release Asset: true
+
+Originally created by MalteseSolutions (http://www.maltesesolutions.com)
+Modified and enhanced by arunsathiya
 */
 
 if ( ! defined( 'ABSPATH' ) ){

@@ -1,71 +1,66 @@
 === Reset Database ===
 
-Contributors: maltesesolutions
-
+Contributors: arunsathiya
+Original Author: maltesesolutions
 Tags: Reset Database, reset wordpress, database reset, reset wordpress database, clean wordpress, default wordpress, restore wordpress, database reset, developers, programmers, wordpress reset
-
 License: GPLv2
-
 Requires at least: 4.0
+Tested up to: 6.7
+Stable tag: 1.0.0
+Requires PHP: 7.4
 
-Tested up to: 5.0
-
-Stable tag: 1.1.3
-
-It resets your database to the default installation and deletes any media files. 
+Enhanced WordPress database reset tool that preserves specified plugin states after reset.
 
 == Description ==
 
-It resets your database to the default installation and deletes any media files.
+This is a fork of the Reset Database plugin by MalteseSolutions, enhanced with the ability to preserve specific plugin states after database reset.
 
-* It adds a settings page to "Dashboard"->"Tools"->"Reset Database" where you can simply reset the database of your WordPress.
-
-* Very useful tool for programmers to reset the database.
-
-* Secure - requires admin password to complete.
-
-* If you find this plugin useful please rate it.
+Key Features:
+* Resets your database to default installation
+* Deletes media files
+* Preserves activation state of specified plugins
+* Secure - requires admin password
+* Available via Tools -> Reset Database
+* Automatic updates via Git Updater
 
 == Installation ==
 
-1. Download and extract this plugin to `wp-content/plugins/`
+1. Install the [Git Updater](https://git-updater.com/) plugin
+2. In WordPress admin, go to Settings > Git Updater > Install Plugin
+3. Enter: https://github.com/[your-username]/reset-database
+4. Click "Install Plugin"
 
-2. Activate the plugin through the 'Plugins' menu in WordPress.
+Alternative installation:
+1. Download the latest release from the GitHub repository
+2. Upload to your WordPress plugins directory
+3. Activate the plugin
+4. Access via Tools -> Reset Database
 
-3. "Dashboard"->"Tools"->"Reset Database"
+== Requirements ==
 
-== Frequently Asked Questions ==
+* WordPress 4.0 or higher
+* PHP 7.4 or higher
+* [Git Updater](https://git-updater.com/) plugin (for automatic updates)
 
-= Does it delete plugins? =
-No, but it will reset them.
-You will have to reactivate any plugins except Reset Database.
+== Credits ==
 
-= Does it delete themes? =
-No, but it will reset the theme back to current default theme.
+This plugin is based on Reset Database by MalteseSolutions (http://www.maltesesolutions.com). Enhanced and maintained by [Your Name].
 
-= Why does it delete the media? =
-WordPress stores a record of the media in the dabase.  We have reset the database, so we need to clear the media directory.
+== Using Git Updater ==
+
+This plugin supports automatic updates via Git Updater. To receive updates:
+
+1. Install the Git Updater plugin
+2. Activate Git Updater
+3. Go to Settings > Git Updater
+4. Enter your GitHub token if using a private repository
+5. Updates will appear in your WordPress dashboard
+
+[Rest of the original readme content...]
 
 == Changelog ==
-= 1.1.3 =
 
-* Tested up to WordPress 5.0
-
-= 1.1.2 =
-
-* Fixed a typo in the input password
-* Added Autocomplete 'Off'
-
-= 1.1.1 =
-
-* Added a reminder to not use admin as username
-* passed compatibility test for WordPress 4.6
-
-= 1.1 =
-
-* Fixed a typo and eliminated the random password email.
-* Continue to use your admin password.
-
-= 1.0 =
-
-* First release.
+= 1.0.0 =
+* Initial fork from Reset Database
+* Added plugin state preservation feature
+* Added Git Updater support
