@@ -16,7 +16,7 @@ if (is_admin()) {
         private $preserve_plugins = array(
             'code-snippets/code-snippets.php',
             'git-updater/git-updater.php',
-            'repoman-1.7.2/repoman.php',
+            'repoman/repoman.php',
             'reset-database/reset-database.php'
         );
 
